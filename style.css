@@ -1,3 +1,9 @@
+.logo {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
 .slider {
   width:50%;
   margin:0 auto;
