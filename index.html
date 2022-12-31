@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!DOCTYPE html> <!-- htmlで書かれていることを宣言 -->
+<html lang="ja"> <!--  htmlページ全体の言語をja(japanese:日本語)に指定 -->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="./image/favicon.png">
-  <link rel="stylesheet" href="style.css">
   <title>よくある質問(非公式)</title>
-
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 </head>
 <body>
   <div class="faq-wrapper">
-    <a href=""><img src="./image/logo.png" alt="非公式" class="logo"></a>
+    <a href="https://snabi.jp/facility/22876"><img src="./image/logo.png" alt="非公式" class="logo"></a>
     <h2 class="title">よくある質問</h2>
     <div class="items">
       <details class="item">
@@ -82,19 +80,117 @@
           </ul>
         </div>
       </details>
+      <details class="item">
+        <summary class="question">このサイトって公式じゃないんですか？</summary>
+        <div class="answer">
+          <ol class="text">
+            <li>うつ病の利用者本人が作ったサイトです</li>
+            <p>確認をとりながら作りましたが公式ではありません</p>
+          </ol>
+        </div>
+      </details>
     </div>
   </div>
+
+
+  <style>
+    .logo {
+      width: 200px;
+      height: 200px;
+      float: left;
+    }
+
+    .slider {
+      width:50%;
+      margin:0 auto;
+    }
+
+    .slider img {
+      border: 1px solid black;
+    }
+
+    .slider .slick-slide {
+      transform: scale(0.8);/*左右の画像のサイズを80%に*/
+      transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+      opacity: 0.5;/*透過50%*/
+    }
+
+    .slider .slick-slide.slick-center{
+      transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+      opacity: 1;/*透過なし*/
+    }
+
+
+    /*矢印の設定*/
+
+    /*戻る、次へ矢印の位置*/
+    .slick-prev, 
+    .slick-next {
+        position: absolute;/*絶対配置にする*/
+        top: 42%;
+        cursor: pointer;/*マウスカーソルを指マークに*/
+        outline: none;/*クリックをしたら出てくる枠線を消す*/
+        border-top: 2px solid #666;/*矢印の色*/
+        border-right: 2px solid #666;/*矢印の色*/
+        height: 15px;
+        width: 15px;
+    }
+
+    .slick-prev {/*戻る矢印の位置と形状*/
+        left: -1.5%;
+        transform: rotate(-135deg);
+    }
+
+    .slick-next {/*次へ矢印の位置と形状*/
+        right: -1.5%;
+        transform: rotate(45deg);
+    }
+
+    /*ドットナビゲーションの設定*/
+
+    .slick-dots {
+        text-align:center;
+      margin:20px 0 0 0;
+    }
+
+    .slick-dots li {
+        display:inline-block;
+      margin:0 5px;
+    }
+
+    .slick-dots button {
+        color: transparent;
+        outline: none;
+        width:15px;/*ドットボタンのサイズ*/
+        height:15px;/*ドットボタンのサイズ*/
+        display:block;
+        border-radius:50%;
+        /* background:#ccc; */
+    }
+
+    .slick-dots .slick-active button{
+        background:#333;/*ドットボタンの現在地表示の色*/
+    }
+  </style>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-  <script type="text/javascript" src="script.js"></script>
+  <script>
+    $('.slider').slick({
+      autoplay: false,//自動的に動き出すか。初期値はfalse。
+      infinite: false,//スライドをループさせるかどうか。初期値はtrue。
+      speed: 500,//スライドのスピード。初期値は300。
+      slidesToShow: 3,//スライドを画面に3枚見せる
+      slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+      prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+      nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+      centerMode: true,//要素を中央ぞろえにする
+      variableWidth: true,//幅の違う画像の高さを揃えて表示
+      dots: true,//下部ドットナビゲーションの表示
+    });
+  </script>
+
 </body>
 </html>
-
-<!-- 
-・退所時にすることが知りたいです。
-・食事の利用方法が知りたいです。
-・飲み物の利用方法が知りたいです。
-・掃除のやり方が知りたいです。 -->
