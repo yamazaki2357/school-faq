@@ -10,6 +10,8 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+/* タイトル */
+
 .faq-wrapper {
   text-align: center;
 }
@@ -40,11 +42,35 @@ body {
   font-weight: 900;
 }
 
-.create-at {
+.update-at {
   font-size: 12px;
   font-weight: 300;
   margin-left: 5px;
-  color:#666;
+  color: #666;
+}
+
+/* カテゴリー */
+.category-section {
+  display: flex;
+  justify-content: center;
+}
+.category-link {
+  padding: 4px 20px;
+  padding-right: 36px;
+  font-weight: 600;
+  color: #ff8201;
+  border-right: 2px solid #dde0e7;
+  cursor: pointer;
+  transition: .4s ease;
+}
+
+.category-link:first-of-type {
+  border-left: 2px solid #dde0e7;
+}
+
+/* FAQ */
+.faq-section {
+  
 }
 
 .slider {
