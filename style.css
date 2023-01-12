@@ -7,34 +7,36 @@ body {
   font-size: 15px;
   line-height: 1.8;
   letter-spacing: .05em;
-  -webkit-text-size-adjust: 100%;
+  background: #f9fafc;
 }
 
 /* タイトル */
 
 .faq-wrapper {
   text-align: center;
+  margin: 0 35px;
 }
 
 .title-area {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 
 .title-area:before {
   content: "";
   display: block;
   position: absolute;
-  top: 18px;
+  top: 28px;
   height: 6px;
   width: 64px;
   background-color: #ff4147;
 }
 
 .informal-logo {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
 }
 
 .title {
@@ -49,12 +51,19 @@ body {
   color: #666;
 }
 
+.sub-title {
+  font-size: 15px;
+  margin: 0 0 30px;
+}
+
 /* カテゴリー */
 .category-section {
   display: flex;
   justify-content: center;
+  margin-bottom: 64px;
 }
 .category-link {
+  position: relative;
   padding: 4px 20px;
   padding-right: 36px;
   font-weight: 600;
@@ -64,15 +73,80 @@ body {
   transition: .4s ease;
 }
 
+.category-link:after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 13px;
+  width: 8px;
+  height: 8px;
+  border: 3px solid #ff8201;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+}
+
 .category-link:first-of-type {
   border-left: 2px solid #dde0e7;
 }
 
-/* FAQ */
-.faq-section {
-  
+.btn {
+  position: absolute;
+  top: 50%;
+  right: 36px;
+}
+.btn span {
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 16px;
+  height: 2px;
+  background: #ff8200;
+  transition: .4s ease;
 }
 
+/* FAQ */
+.section {
+
+}
+
+.section h2 {
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.item {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 6px 10px 12px 0px rgb(40 47 60 / 5%);
+  cursor: pointer;
+  transition: .4s ease;
+  margin-bottom: 22px;
+}
+.question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 20px 40px 20px 24px;
+}
+
+.question-ico {
+  padding-right: 20px;
+}
+.answer {}
+.answer-text {
+  text-align: left;
+  position: relative;
+  padding: 20px 40px 20px 24px;
+}
+.answer-ico {
+
+}
+
+
+
+/* スライダー */
 .slider {
   width: 50%;
   margin: 0 auto;

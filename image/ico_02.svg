@@ -1,0 +1,8 @@
+<!--Scalable Vector Graphic-->
+<svg
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="20px" height="20px">
+<path fill-rule="evenodd"  fill="rgb(255, 115, 115)"
+ d="M14.838,19.836 L19.308,19.836 L12.459,0.107 L7.605,0.107 L0.755,19.836 L4.898,19.836 L6.416,15.051 L13.347,15.051 L14.838,19.836 ZM9.779,4.113 L10.025,4.113 L12.472,11.961 L7.304,11.961 L9.779,4.113 Z"/>
+</svg>
