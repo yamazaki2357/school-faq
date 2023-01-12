@@ -233,3 +233,8 @@ body {
   background: #333;
   /*ドットボタンの現在地表示の色*/
 }
+
+/* video */
+.video {
+  width: 90%;
+}
