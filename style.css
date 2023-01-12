@@ -166,7 +166,8 @@ body {
   background: #fff;
   box-shadow: 6px 10px 12px 0px rgb(40 47 60 / 5%);
   transition: .4s ease;
-  margin-bottom: 22px;
+  max-width: 960px;
+  margin: 0 auto 22px;
 }
 .item:hover {
   box-shadow: 6px 10px 12px 0px rgb(40 47 60 / 10%);
