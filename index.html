@@ -1,5 +1,5 @@
-<!DOCTYPE html> <!-- htmlで書かれていることを宣言 -->
-<html lang="ja"> <!--  htmlページ全体の言語をja(japanese:日本語)に指定 -->
+<!DOCTYPE html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,17 +23,114 @@
         <i class="fa-solid fa-arrow-up-right-from-square"></i>
       </a>
     </h2>
-    <section class="category-section">
-      <div class="category-link">通所利用について</div>
-      <div class="category-link">在宅利用について</div>
-      <div class="category-link">掃除について</div>
-      <div class="category-link">その他</div>
+    <section id="page-link" class="category-section">
+      <a class="category-link" href="#first-section">通所利用について</a>
+      <a class="category-link" href="#second-section">在宅利用について</a>
+      <a class="category-link" href="#third-section">掃除について</a>
+      <a class="category-link" href="#fourth-section">その他</a>
     </section>
 
-
-
-    <section class="first-section section">
+    <section id="first-section" class="section">
       <h2>通所利用について</h2>
+      <!-- フォーマット -->
+      <details class="item">
+        <summary class="question">
+          <img src="image/ico_01.svg" alt="" class="question-ico">
+          フォーマット① テキスト
+          <div class="btn"><span></span><span></span></div>
+        </summary>
+        <div class="answer">
+          <div class="answer-inner">
+            <img src="image/ico_02.svg" alt="" class="answer-ico">
+            <div class="answer-text">
+              <p>①テキストテキスト</p>
+              <p>②テキストテキスト</p>
+              <p>③テキストテキスト</p>
+              <p>
+                長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト
+              </p>
+            </div>
+          </div>
+        </div>
+      </details>
+      <details class="item">
+        <summary class="question">
+          <img src="image/ico_01.svg" alt="" class="question-ico">
+          フォーマット② 1枚画像
+          <div class="btn"><span></span><span></span></div>
+        </summary>
+        <div class="answer">
+          <div class="answer-inner">
+            <img src="image/ico_02.svg" alt="" class="answer-ico">
+            <div class="answer-text">
+              <p>テキストテキスト</p>
+              <p>
+                長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト
+              </p>
+            </div>
+          </div>
+          <img class="answer-img" src="image/demo.jpg" alt="デモ画像">
+        </div>
+      </details>
+      <details class="item">
+        <summary class="question">
+          <img src="image/ico_01.svg" alt="" class="question-ico">
+          フォーマット③ 画像スライド
+          <div class="btn"><span></span><span></span></div>
+        </summary>
+        <div class="answer">
+          <div class="answer-inner">
+            <img src="image/ico_02.svg" alt="" class="answer-ico">
+            <div class="answer-text">
+              <p>テキストテキスト</p>
+              <p>
+                長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト
+              </p>
+            </div>
+          </div>
+          <ul class="slider">
+            <li>
+              <img src="./image/demo.jpg" alt="">
+              <p>①検温＆アルコール消毒</p>
+            </li>
+            <li>
+              <img src="./image/demo.jpg" alt="">
+              <p>②タイムカード</p>
+            </li>
+            <li>
+              <img src="./image/noimage.jpg" alt="">
+              <p>③日報【通所時】</p>
+            </li>
+            <li>
+              <img src="./image/noimage.jpg" alt="">
+              <p>④Slack【金沢_利用者日報】</p>
+            </li>
+            <li>
+              <img src="./image/noimage.jpg" alt="">
+              <p>⑤昼食の用意</p>
+            </li>
+          </ul>
+        </div>
+      </details>
+      <details class="item">
+        <summary class="question">
+          <img src="image/ico_01.svg" alt="" class="question-ico">
+          フォーマット④ ビデオ
+          <div class="btn"><span></span><span></span></div>
+        </summary>
+        <div class="answer">
+          <div class="answer-inner">
+            <img src="image/ico_02.svg" alt="" class="answer-ico">
+            <div class="answer-text">
+              <p>テキストテキスト</p>
+              <p>
+                長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト長いテキスト
+              </p>
+            </div>
+          </div>
+          <video class="video" src="video/test.mp4" type="video/mp4" autoplay loop muted></video>
+        </div>
+      </details>
       <details class="item">
         <summary class="question">
           <img src="image/ico_01.svg" alt="" class="question-ico">
@@ -41,201 +138,103 @@
           <div class="btn"><span></span><span></span></div>
         </summary>
         <div class="answer">
-          <div class="answer-text">
+          <div class="answer-inner">
             <img src="image/ico_02.svg" alt="" class="answer-ico">
-            <p>①入り口で検温＆アルコール消毒をお願いします。</p>
-            <p>②次にクリアチェストからご自身のファイルを取ってタイムカードを押しましょう。</p>
-            <p>③席についたら日報【通所時】を記入してください。</p>
-            <p>④日報記入できたら、Slackの「金沢_利用者日報」で報告しましょう。</p>
-            <p>⑤昼食ご利用される方はお昼の用意をお願いします。</p>
+            <div class="answer-text">
+              <p>①入り口で検温＆アルコール消毒をお願いします。</p>
+              <p>②次にクリアチェストからご自身のファイルを取ってタイムカードを押しましょう。</p>
+              <p>③席についたら日報【通所時】を記入してください。</p>
+              <p>④日報記入できたら、Slackの「金沢_利用者日報」で報告しましょう。</p>
+              <p>⑤昼食ご利用される方はお昼の用意をお願いします。</p>
+            </div>
           </div>
-          <!-- <ul class="slider">
-            <li><img src="./image/noimage.jpg" alt=""><p>①検温＆アルコール消毒</p></li>
-            <li><img src="./image/noimage.jpg" alt=""><p>②タイムカード</p></li>
-            <li><img src="./image/noimage.jpg" alt=""><p>③日報【通所時】</p></li>
-            <li><img src="./image/noimage.jpg" alt=""><p>④Slack【金沢_利用者日報】</p></li>
-            <li><img src="./image/noimage.jpg" alt=""><p>⑤昼食の用意</p></li>
-          </ul> -->
         </div>
       </details>
 
       <details class="item">
         <summary class="question">退所時にすることが知りたいです。</summary>
         <div class="answer">
-          <div class="answer-text">
+          <div class="answer-inner">
             <p>①活動表？を記入</p>
             <p>②日報【退所時】記入</p>
             <p>③Slack【金沢_利用者日報】</p>
             <p>④タイムカードを押す</p>
             <p>⑤掃除</p>
           </div>
-          <!-- <ul class="slider">
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>①テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>②テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>③テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>④テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>⑤テキストテキスト</p>
-            </li>
-          </ul> -->
         </div>
       </details>
       <details class="item">
         <summary class="question">お昼の準備について教えてください。</summary>
         <div class="answer">
-          <div class="answer-text">
+          <div class="answer-inner">
             <p>①テキストテキスト</p>
             <p>②テキストテキスト</p>
             <p>③テキストテキスト</p>
             <p>④テキストテキスト</p>
             <p>⑤テキストテキスト</p>
           </div>
-          <!-- <ul class="slider">
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>①テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>②テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>③テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>④テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>⑤テキストテキスト</p>
-            </li>
-          </ul> -->
         </div>
       </details>
       <details class="item">
         <summary class="question">飲み物の利用方法について教えてください。</summary>
         <div class="answer">
-          <div class="answer-text">
+          <div class="answer-inner">
             <p>①テキストテキスト</p>
             <p>②テキストテキスト</p>
             <p>③テキストテキスト</p>
             <p>④テキストテキスト</p>
             <p>⑤テキストテキスト</p>
           </div>
-          <!-- <ul class="slider">
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>①テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>②テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>③テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>④テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>⑤テキストテキスト</p>
-            </li>
-          </ul> -->
         </div>
       </details>
     </section>
 
-    <section class="second-section section">
+    <section id="second-section" class="section">
       <h2>在宅利用について</h2>
       <details class="item">
         <summary class="question">〇〇を教えてください。</summary>
         <div class="answer">
-          <div class="answer-text">
+          <div class="answer-inner">
             <p>①テキストテキスト</p>
             <p>②テキストテキスト</p>
             <p>③テキストテキスト</p>
             <p>④テキストテキスト</p>
             <p>⑤テキストテキスト</p>
           </div>
-          <!-- <ul class="slider">
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>テキストテキスト</p>
-            </li>
-          </ul> -->
         </div>
       </details>
       <details class="item">
         <summary class="question">△△を教えてください。</summary>
         <div class="answer">
-          <div class="answer-text">
+          <div class="answer-inner">
             <p>①テキストテキスト</p>
             <p>②テキストテキスト</p>
             <p>③テキストテキスト</p>
             <p>④テキストテキスト</p>
             <p>⑤テキストテキスト</p>
           </div>
-          <!-- <ul class="slider">
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>テキストテキスト</p>
-            </li>
-          </ul> -->
         </div>
       </details>
       <details class="item">
         <summary class="question">××を教えてください。</summary>
         <div class="answer">
-          <div class="answer-text">
+          <div class="answer-inner">
             <p>①テキストテキスト</p>
             <p>②テキストテキスト</p>
             <p>③テキストテキスト</p>
             <p>④テキストテキスト</p>
             <p>⑤テキストテキスト</p>
           </div>
-          <!-- <ul class="slider">
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>テキストテキスト</p>
-            </li>
-            <li><img src="./image/noimage.jpg" alt="">
-              <p>テキストテキスト</p>
-            </li>
-          </ul> -->
         </div>
       </details>
     </section>
 
-    <section class="third-section section">
+    <section id="third-section" class="section">
       <h2>掃除について</h2>
       <details class="item">
         <summary class="question">1. ~~~~の掃除</summary>
         <div class="answer">
-          <div class="answer-text">
+          <div class="answer-inner">
             <p>①テキストテキスト</p>
             <p>②テキストテキスト</p>
             <p>③テキストテキスト</p>
@@ -247,7 +246,7 @@
       <details class="item">
         <summary class="question">2. ~~~~の掃除</summary>
         <div class="answer">
-          <div class="answer-text">
+          <div class="answer-inner">
             <p>①テキストテキスト</p>
             <p>②テキストテキスト</p>
             <p>③テキストテキスト</p>
@@ -259,19 +258,7 @@
       <details class="item">
         <summary class="question">3. ~~~~の掃除</summary>
         <div class="answer">
-          <div class="answer-text">
-            <p>①テキストテキスト</p>
-            <p>②テキストテキスト</p>
-            <p>③テキストテキスト</p>
-            <p>④テキストテキスト</p>
-            <p>⑤テキストテキスト</p>
-          </div>
-        </div>
-      </details>
-      <details class="item">
-        <summary class="question">4. ~~~~の掃除</summary>
-        <div class="answer">
-          <div class="answer-text">
+          <div class="answer-inner">
             <p>①テキストテキスト</p>
             <p>②テキストテキスト</p>
             <p>③テキストテキスト</p>
@@ -282,76 +269,15 @@
       </details>
     </section>
 
-    <section class="fourth-section section">
+    <section id="fourth-section" class="section">
       <h2>その他</h2>
       <details class="item">
         <summary class="question">このサイトって公式じゃないんですか？</summary>
         <div class="answer">
-          <div class="answer-text">
+          <div class="answer-inner">
             <p>スクール利用者が作ったサイトです。</p>
             <p>確認を取りながら作りましたが公式ではありません</p>
           </div>
-        </div>
-      </details>
-      <details class="item">
-        <summary class="question">
-          <img src="image/ico_01.svg" alt="" class="question-ico">
-          Q&Aフォーマット
-          <div class="btn"><span></span><span></span></div>
-        </summary>
-        <div class="answer">
-          <div class="answer-text">
-            <img src="image/ico_02.svg" alt="" class="answer-ico">
-            <p>テキストテキスト</p>
-          </div>
-        </div>
-      </details>
-      <details class="item">
-        <summary class="question">
-          <img src="image/ico_01.svg" alt="" class="question-ico">
-          Q&Aフォーマット（画像付き）
-          <div class="btn"><span></span><span></span></div>
-        </summary>
-        <div class="answer">
-          <div class="answer-text">
-            <img src="image/ico_02.svg" alt="" class="answer-ico">
-            <p>テキストテキスト</p>
-          </div>
-          <img src="image/demo.jpg" alt="デモ画像" width="90%">
-        </div>
-      </details>
-      <details class="item">
-        <summary class="question">
-          <img src="image/ico_01.svg" alt="" class="question-ico">
-          Q&Aフォーマット（画像スライド付き）
-          <div class="btn"><span></span><span></span></div>
-        </summary>
-        <div class="answer">
-          <div class="answer-text">
-            <img src="image/ico_02.svg" alt="" class="answer-ico">
-            <p>テキストテキスト</p>
-          </div>
-          <ul class="slider">
-            <li><img src="./image/noimage.jpg" alt=""><p>①検温＆アルコール消毒</p></li>
-            <li><img src="./image/noimage.jpg" alt=""><p>②タイムカード</p></li>
-            <li><img src="./image/noimage.jpg" alt=""><p>③日報【通所時】</p></li>
-            <li><img src="./image/noimage.jpg" alt=""><p>④Slack【金沢_利用者日報】</p></li>
-            <li><img src="./image/noimage.jpg" alt=""><p>⑤昼食の用意</p></li>
-          </ul>
-        </div>
-      </details>
-      <details class="item">
-        <summary class="question">
-          <img src="image/ico_01.svg" alt="" class="question-ico">
-          Q&Aフォーマット（映像付き）
-          <div class="btn"><span></span><span></span></div>
-        </summary>
-        <div class="answer">
-          <div class="answer-text">
-            <img src="image/ico_02.svg" alt="" class="answer-ico">
-            <p>テキストテキスト</p>
-          </div>
-          <video class="video" src="video/test.mp4" type="video/mp4" autoplay loop muted></video>
         </div>
       </details>
     </section>
@@ -370,7 +296,7 @@
   <script>
     $('.slider').slick({
       autoplay: false,//自動的に動き出すか。初期値はfalse。
-      infinite: false,//スライドをループさせるかどうか。初期値はtrue。
+      infinite: true,//スライドをループさせるかどうか。初期値はtrue。
       speed: 500,//スライドのスピード。初期値は300。
       slidesToShow: 3,//スライドを画面に3枚見せる
       slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
@@ -380,6 +306,13 @@
       variableWidth: true,//幅の違う画像の高さを揃えて表示
       dots: true,//下部ドットナビゲーションの表示
     });
+
+    $('#page-link a[href*="#"]').click(function () {
+        const elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+        const pos = $(elmHash).offset().top;  //idの上部の距離を取得
+        $('body,html').animate({ scrollTop: pos }, 300); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+        return false;
+      });
   </script>
 
 </body>

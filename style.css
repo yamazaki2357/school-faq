@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   color: #282f3c;
-  font-family: 'Noto Sans JP', 'ヒラギノ角ゴ W3', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Meiryo UI', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-family: 'Noto Sans JP', 'ヒラギノ角ゴ W3', 'ヒラギノ角ゴ Pro W3', 'Meiryo UI', 'メイリオ', 'MS PGothic', sans-serif;
   font-size: 15px;
   line-height: 1.8;
   letter-spacing: .05em;
@@ -68,6 +68,9 @@ body {
   justify-content: center;
   margin-bottom: 64px;
 }
+.category-section a {
+  text-decoration: none;
+}
 .category-link {
   position: relative;
   padding: 4px 20px;
@@ -112,9 +115,7 @@ body {
 }
 
 /* FAQ */
-.section {
-
-}
+.section {}
 
 .section h2 {
   font-size: 26px;
@@ -132,8 +133,11 @@ body {
 .item:hover {
   box-shadow: 6px 10px 12px 0px rgb(40 47 60 / 10%);
 }
-details[open].item .question .btn span:first-child {
+details.item .question .btn span:first-child {
   transform: rotate(90deg);
+}
+details[open].item .question .btn span:first-child {
+  transform: rotate(180deg);
 }
 details[open] .answer {
   animation: fadeIn 0.5s ease;
@@ -151,8 +155,6 @@ details[open] .answer {
 }
 
 .question {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   padding: 20px 40px 20px 24px;
@@ -161,75 +163,67 @@ details[open] .answer {
 .question-ico {
   padding-right: 20px;
 }
-.answer {
-
-}
-.answer-text {
-  text-align: left;
-  position: relative;
+.answer {}
+.answer-inner {
+  display: flex;
+  align-items: flex-start;
   padding: 20px 40px 20px 24px;
 }
 .answer-ico {
-
+  padding-right: 20px;
 }
-
-
+.answer-text {
+  text-align: left;
+  line-height: 20px;
+}
+.answer-text p:first-child {
+  margin-top: 0;
+}
+.answer-img {
+  width: 50%;
+  margin-bottom: 20px;
+}
 
 /* スライダー */
 .slider {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
 }
 
 .slider img {
-  border: 1px solid black;
+  border: 1px solid #282f3c;
+  max-width: 500px;
 }
 
 .slider .slick-slide {
-  transform: scale(0.8);
-  /*左右の画像のサイズを80%に*/
-  transition: all .5s;
-  /*拡大や透過のアニメーションを0.5秒で行う*/
-  opacity: 0.5;
-  /*透過50%*/
+  transform: scale(0.9);
+  transition: all .5s; /*拡大や透過のアニメーションを0.5秒で行う*/
 }
 
 .slider .slick-slide.slick-center {
-  transform: scale(1);
-  /*中央の画像のサイズだけ等倍に*/
+  transform: scale(1); /*中央の画像のサイズだけ等倍に*/
   opacity: 1;
-  /*透過なし*/
 }
 
-
-/*矢印の設定*/
-
+/* 矢印の設定 */
 /*戻る、次へ矢印の位置*/
 .slick-prev,
 .slick-next {
   position: absolute;
-  /*絶対配置にする*/
   top: 42%;
   cursor: pointer;
-  /*マウスカーソルを指マークに*/
   outline: none;
-  /*クリックをしたら出てくる枠線を消す*/
   border-top: 2px solid #666;
-  /*矢印の色*/
   border-right: 2px solid #666;
-  /*矢印の色*/
-  height: 15px;
-  width: 15px;
+  height: 30px;
+  width: 30px;
 }
 
-.slick-prev {
-  /*戻る矢印の位置と形状*/
+.slick-prev { /*戻る矢印の位置と形状*/
   left: -1.5%;
   transform: rotate(-135deg);
 }
-
-.slick-next {
-  /*次へ矢印の位置と形状*/
+.slick-next { /*次へ矢印の位置と形状*/
   right: -1.5%;
   transform: rotate(45deg);
 }
@@ -238,7 +232,7 @@ details[open] .answer {
 
 .slick-dots {
   text-align: center;
-  margin: 20px 0 0 0;
+  opacity: 0.5;
 }
 
 .slick-dots li {
@@ -249,21 +243,21 @@ details[open] .answer {
 .slick-dots button {
   color: transparent;
   outline: none;
+  border: none;
   width: 15px;
-  /*ドットボタンのサイズ*/
   height: 15px;
-  /*ドットボタンのサイズ*/
-  display: block;
   border-radius: 50%;
-  /* background:#ccc; */
+  background:#ccc;
+  margin-bottom: 20px;
 }
 
 .slick-dots .slick-active button {
-  background: #333;
-  /*ドットボタンの現在地表示の色*/
+  background: #ff8200;
 }
 
+
 /* video */
+
 .video {
   width: 90%;
 }
