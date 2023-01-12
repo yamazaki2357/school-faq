@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background: #fff;
   color: #282f3c;
   font-family: 'Noto Sans JP', 'ヒラギノ角ゴ W3', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Meiryo UI', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-size: 15px;
@@ -54,6 +53,13 @@ body {
 .sub-title {
   font-size: 15px;
   margin: 0 0 30px;
+}
+.sub-title a {
+  color: #282f3c;
+  letter-spacing: 0.1em;
+}
+.sub-title a:hover {
+  opacity: 0.8;
 }
 
 /* カテゴリー */
@@ -123,6 +129,27 @@ body {
   transition: .4s ease;
   margin-bottom: 22px;
 }
+.item:hover {
+  box-shadow: 6px 10px 12px 0px rgb(40 47 60 / 10%);
+}
+details[open].item .question .btn span:first-child {
+  transform: rotate(90deg);
+}
+details[open] .answer {
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .question {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,7 +161,9 @@ body {
 .question-ico {
   padding-right: 20px;
 }
-.answer {}
+.answer {
+
+}
 .answer-text {
   text-align: left;
   position: relative;
