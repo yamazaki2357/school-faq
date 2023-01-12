@@ -126,7 +126,6 @@ body {
   border-radius: 8px;
   background: #fff;
   box-shadow: 6px 10px 12px 0px rgb(40 47 60 / 5%);
-  cursor: pointer;
   transition: .4s ease;
   margin-bottom: 22px;
 }
@@ -158,6 +157,7 @@ details[open] .answer {
   display: flex;
   position: relative;
   padding: 20px 40px 20px 24px;
+  cursor: pointer;
 }
 
 .question-ico {
@@ -210,24 +210,37 @@ details[open] .answer {
 .slick-prev,
 .slick-next {
   position: absolute;
-  top: 42%;
+  top: 0;
   cursor: pointer;
+  z-index: 2;
   outline: none;
-  border-top: 2px solid #666;
-  border-right: 2px solid #666;
-  height: 30px;
-  width: 30px;
+  height: 400px;
+  width: 200px;
+  font-size: 50px;
+  opacity: 0.5;
+}
+.slick-prev i,
+.slick-next i {
+  color: #ff8200;
+  position: absolute;
+  top: 170px;
 }
 
-.slick-prev { /*戻る矢印の位置と形状*/
+.slick-prev {
   left: -1.5%;
-  transform: rotate(-135deg);
+  display: flex;
 }
-.slick-next { /*次へ矢印の位置と形状*/
+.slick-prev:hover {
+  opacity: 0.8;
+}
+.slick-next {
   right: -1.5%;
-  transform: rotate(45deg);
+  display: flex;
+  justify-content: flex-end;
 }
-
+.slick-next:hover {
+  opacity: 0.8;
+}
 /*ドットナビゲーションの設定*/
 
 .slick-dots {
@@ -259,5 +272,6 @@ details[open] .answer {
 /* video */
 
 .video {
-  width: 90%;
+  width: 60%;
+  margin-bottom: 20px;
 }
