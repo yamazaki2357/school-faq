@@ -9,6 +9,13 @@ body {
   background: #f9fafc;
 }
 
+/* 文字 */
+.emphasis {
+  color:#ff4147;
+  font-weight: bold;
+}
+
+
 /* タイトル */
 
 .faq-wrapper {
@@ -48,12 +55,6 @@ body {
   font-weight: 900;
 }
 
-.update-at {
-  font-size: 12px;
-  font-weight: 300;
-  margin-left: 5px;
-  color: #666;
-}
 @media screen and (max-width: 520px) {
   .title {
     display: flex;
@@ -61,9 +62,7 @@ body {
     align-items: flex-end;
     font-size: 32px;
   }
-  .update-at {
-    font-size: 8px;
-  }
+
   .informal-logo {
     width: 50px;
     height: 50px;
@@ -172,11 +171,11 @@ body {
 .item:hover {
   box-shadow: 6px 10px 12px 0px rgb(40 47 60 / 10%);
 }
-details.item .question .btn span:first-child {
+details span:first-child {
   transform: rotate(90deg);
 }
-details[open].item .question .btn span:first-child {
-  transform: rotate(180deg);
+details[open] span:first-child {
+  transform: rotate(0deg);
 }
 details[open] .answer {
   animation: fadeIn 0.5s ease;
@@ -230,6 +229,7 @@ details[open] .answer {
     width: 90%;
   }
 }
+
 /* スライダー */
 .slider {
   width: 80%;
@@ -243,7 +243,7 @@ details[open] .answer {
 
 .slider .slick-slide {
   transform: scale(0.9);
-  transition: all .5s; /*拡大や透過のアニメーションを0.5秒で行う*/
+  transition: all .5s;
 }
 
 .slider .slick-slide.slick-center {
@@ -262,7 +262,6 @@ details[open] .answer {
 }
 
 /* 矢印の設定 */
-/*戻る、次へ矢印の位置*/
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -297,8 +296,8 @@ details[open] .answer {
 .slick-next:hover {
   opacity: 0.8;
 }
-/*ドットナビゲーションの設定*/
 
+/*ドットナビゲーションの設定*/
 .slick-dots {
   text-align: center;
   opacity: 0.5;
@@ -319,14 +318,10 @@ details[open] .answer {
   background:#ccc;
   margin-bottom: 20px;
 }
-
 .slick-dots .slick-active button {
   background: #ff8200;
 }
-
-
 /* video */
-
 .video {
   width: 60%;
   margin-bottom: 20px;
@@ -336,9 +331,7 @@ details[open] .answer {
     width: 90%;
   }
 }
-
 /* フッター */
-
 .footer {
   height: 100px;
 }
