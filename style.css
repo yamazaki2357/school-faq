@@ -15,7 +15,6 @@ body {
   font-weight: bold;
 }
 
-
 /* タイトル */
 
 .faq-wrapper {
@@ -84,6 +83,11 @@ body {
   .sub-title a {
     font-size: 12px;
   }
+}
+
+.youtube-logo {
+  width: 35px;
+  padding-right: 10px;
 }
 
 /* カテゴリー */
