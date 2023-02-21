@@ -23,12 +23,10 @@ https://user-images.githubusercontent.com/98888061/220252133-e7854fec-83df-46d1-
 
 ・実際にスクールで使ってもらえるように意識してデザインと項目内容を考えました。　　
 
-スクール側から利用者の質問募集をしてCEOが回答するという機会があったので、
+・スクール側から利用者の質問募集をしてCEOが回答するという機会があったので、
 注目度が高くなるチャンスと捉えて、CEOの質問回答を組み込み4日後に完成させてスクール内に公開しました。
 
-<details><summary>Slackのやりとり</summary>
-
+Slackのやりとり　　
 <img width="877" alt="スクリーンショット 2023-02-21 14 34 27" src="https://user-images.githubusercontent.com/98888061/220256699-5b53befe-3a32-4f78-b5df-0ffa3aa94ccc.png">
-</details>
 
 
