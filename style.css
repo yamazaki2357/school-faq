@@ -16,7 +16,6 @@ body {
 }
 
 /* タイトル */
-
 .faq-wrapper {
   text-align: center;
   margin: 0 35px;
@@ -91,7 +90,6 @@ body {
 }
 
 /* カテゴリー */
-
 .category-section {
   display: flex;
   justify-content: center;
@@ -158,6 +156,7 @@ body {
     width: 100%;
   }
 }
+
 /* FAQ */
 .section h2 {
   font-size: 26px;
@@ -251,7 +250,7 @@ details[open] .answer {
 }
 
 .slider .slick-slide.slick-center {
-  transform: scale(1); /*中央の画像のサイズだけ等倍に*/
+  transform: scale(1);
   opacity: 1;
 }
 @media screen and (max-width: 520px) {
@@ -325,6 +324,7 @@ details[open] .answer {
 .slick-dots .slick-active button {
   background: #ff8200;
 }
+
 /* video */
 .video {
   width: 60%;
@@ -335,6 +335,7 @@ details[open] .answer {
     width: 90%;
   }
 }
+
 /* フッター */
 .footer {
   height: 100px;
