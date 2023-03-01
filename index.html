@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,10 +25,12 @@
     })(window, document, "clarity", "script", "fzpq1ho5p3");
   </script>
 </head>
+
 <body>
   <div class="faq-wrapper">
     <div class="title-area">
-      <a href="https://snabi.jp/facility/22876"  target="_blank"><img src="image/logo.png" alt="非公式" class="informal-logo"></a>
+      <a href="https://snabi.jp/facility/22876" target="_blank"><img src="image/logo.png" alt="非公式"
+          class="informal-logo"></a>
       <p class="title">よくある質問</p>
     </div>
     <h1 class="sub-title">
@@ -45,7 +48,7 @@
 
     <section id="first-section" class="section">
       <h2>通所利用について</h2>
-      <details class="item">
+      <details class="item" id="my-dropdown">
         <summary class="question">
           <img src="image/ico_01.svg" alt="Question" class="question-ico">
           通所時にすることが知りたいです。
@@ -247,7 +250,7 @@
             <div class="answer-text">
               <iframe width="100%" height="393" src="https://www.youtube.com/embed/X5uwtLIHmiQ" title="就労移行支援事業所【ルーツ金沢】"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
           </div>
@@ -396,12 +399,18 @@
     });
 
     $('#page-link a[href*="#"]').click(function () {
-        const elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
-        const pos = $(elmHash).offset().top;  //idの上部の距離を取得
-        $('body,html').animate({ scrollTop: pos }, 300); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
-        return false;
-      });
+      const elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+      const pos = $(elmHash).offset().top;  //idの上部の距離を取得
+      $('body,html').animate({ scrollTop: pos }, 300); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+      return false;
+    });
+
+    $('.answer').click(function () {
+      const details = $(this).parent();
+      details.removeAttr('open');
+    });
   </script>
 
 </body>
+
 </html>
