@@ -405,12 +405,11 @@
       return false;
     });
 
-    $('.answer').click(function () {
-      const details = $(this).parent();
-      details.removeAttr('open');
+    // answer-innerがクリックされたときditailのopenを削除する
+    $('.answer-inner').click(function () {
+      $(this).parent().parent().removeAttr('open');
     });
-  </script>
-
+    </script>
 </body>
 
 </html>
