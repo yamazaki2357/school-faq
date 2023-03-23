@@ -7,6 +7,7 @@ https://user-images.githubusercontent.com/98888061/220252133-e7854fec-83df-46d1-
 ## 技術
 ・HTML  
 ・CSS
+・JavaScript
 
 ## アピールポイント
 ・自分から提案することができる  
