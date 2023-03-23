@@ -40,13 +40,64 @@
       </a>
     </h1>
     <section id="page-link" class="category-section">
-      <a class="category-link" href="#first-section">通所利用について</a>
-      <a class="category-link" href="#second-section">在宅利用について</a>
+      <a class="category-link" href="#first-section">スクールからのお知らせ</a>
+      <a class="category-link" href="#second-section">通所利用について</a>
+      <a class="category-link" href="#third-section">在宅利用について</a>
       <a class="category-link" href="#fourth-section">その他</a>
       <a class="category-link" href="#fifth-section">久保さん(CEO)特別講座</a>
     </section>
 
     <section id="first-section" class="section">
+      <h2>スクールからのお知らせ🔔</h2>
+      <details class="item" id="my-dropdown" open>
+        <summary class="question">
+          <img src="image/ico_01.svg" alt="Question" class="question-ico">
+          防犯カメラを設置することになりました(2023/03/23)
+          <div class="btn"><span></span><span></span></div>
+        </summary>
+        <div class="answer">
+          <div class="answer-inner">
+            <img src="image/ico_02.svg" alt="Answer" class="answer-ico">
+            <div class="answer-text">
+              <p>教室利用者の皆様へ</p>
+
+              <p>いつも当教室をご利用いただき、誠にありがとうございます。今後、教室内に防犯カメラを設置することになりましたので、お知らせいたします。</p>
+                
+              <p>防犯カメラは、教室全体に1つと面談室に1つ設置されます。映像の保存期間は1週間となります。映像を確認できるのは、CEOの久保のみとさせていただきます。</p>
+                
+              <p>なお、防犯カメラはトラブルが発生した場合の対応用として設置されるものであり、教室利用者のプライバシーの侵害を目的としたものではありません。また、映像データは適切に管理され、外部に漏れることはありません。</p>
+                
+              <p>今後もより良い教室環境を提供するために、改善に努めてまいります。何かご不明な点がございましたら、お気軽にお問い合わせください。</p>
+            </div>
+          </div>
+        </div>
+      </details>
+      <details class="item">
+        <summary class="question">
+          <img src="image/ico_01.svg" alt="Question" class="question-ico">
+          Slackの使い方について変更があります(2023/03/23)
+          <div class="btn"><span></span><span></span></div>
+        </summary>
+        <div class="answer">
+          <div class="answer-inner">
+            <img src="image/ico_02.svg" alt="Answer" class="answer-ico">
+            <div class="answer-text">
+              <p>教室利用者の皆様へ</p>
+
+              <p>いつも当教室をご利用いただき、ありがとうございます。この度、Slackの使い方について変更がありますので、お知らせいたします。</p>
+                
+              <p>これまで担当者と個別にDMでやりとりをされていた方もいらっしゃると思いますが、今後は個別DMを控え、担当者と利用者の2人のチャンネルを作成いたします。また、CEOの久保もチャンネルに参加させていただきます。</p>
+                
+              <p>今後は、スタッフと一緒にチャンネルを作成し、そちらでのやりとりをお願いいたします。なお、これまで他の利用者の方のサポートとして個人DM＋スタッフで行っていた方もいらっしゃると思いますが、今後はみんなが見れる公開の質問チャンネルを利用していただけますよう、よろしくお願いいたします。</p>
+                
+              <p>変更により、よりスムーズなコミュニケーションができるようになることを期待しております。何かご不明な点がございましたら、お気軽にお問い合わせください。</p>
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section id="second-section" class="section">
       <h2>通所利用について</h2>
       <details class="item" id="my-dropdown">
         <summary class="question">
@@ -162,7 +213,7 @@
         </div>
       </details>
     </section>
-    <section id="second-section" class="section">
+    <section id="third-section" class="section">
       <h2>在宅利用について</h2>
       <details class="item">
         <summary class="question">
@@ -405,11 +456,10 @@
       return false;
     });
 
-    // answer-innerがクリックされたときditailのopenを削除する
     $('.answer-inner').click(function () {
       $(this).parent().parent().removeAttr('open');
     });
-    </script>
+  </script>
 </body>
 
 </html>
