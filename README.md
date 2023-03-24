@@ -11,10 +11,14 @@ https://user-images.githubusercontent.com/98888061/220252133-e7854fec-83df-46d1-
 
 ・確認をとりながらタスクを進めることができる  
 
-・実際にスクールで使っていただいている
-
 ・実装手順をドキュメントにまとめることができる  
 **[Qiita記事:よくある質問の作り方](https://qiita.com/yamazaki2357/items/40daf5f188ca58b61e91)**
+
+・実際にスクールで使っていただいている
+<div class="left">
+  <img width="300" src="https://github.com/yamazaki2357/FAQ/blob/main/image/clarity_1.png">
+  <img width="300" src="https://github.com/yamazaki2357/FAQ/blob/main/image/clarity_2.png">
+</div>
 
 ## 実装において工夫した点
 
