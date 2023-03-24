@@ -1,22 +1,20 @@
 # 就労移行支援ITスクール金沢　よくある質問(非公式)
+**https://school-faq.netlify.app/**  
+
 https://user-images.githubusercontent.com/98888061/220252133-e7854fec-83df-46d1-9ef1-7b27bf1a1d0f.mov
 
 ## 概要
 利用者が作った就労移行ITスクール金沢のよくある質問サイトです。
-
-## 技術
-・HTML  
-・CSS  
-・JavaScript
 
 ## アピールポイント
 ・自分から提案することができる  
 
 ・確認をとりながらタスクを進めることができる  
 
-・実際にスクールで使ってもらっている　　
+・実際にスクールで使っていただいている
 
-・実装手順をドキュメントにまとめることができる  **[Qiita記事:よくある質問の作り方](https://qiita.com/yamazaki2357/items/40daf5f188ca58b61e91)**
+・実装手順をドキュメントにまとめることができる  
+**[Qiita記事:よくある質問の作り方](https://qiita.com/yamazaki2357/items/40daf5f188ca58b61e91)**
 
 ## 実装において工夫した点
 
@@ -30,4 +28,10 @@ https://user-images.githubusercontent.com/98888061/220252133-e7854fec-83df-46d1-
 Slackのやりとり　　
 <img width="877" alt="スクリーンショット 2023-02-21 14 34 27" src="https://user-images.githubusercontent.com/98888061/220256699-5b53befe-3a32-4f78-b5df-0ffa3aa94ccc.png">
 
+## 技術
+・HTML  
+・CSS  
+・JavaScript  
 
+分析ツール  
+・Clarity
