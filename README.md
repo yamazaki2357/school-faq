@@ -15,6 +15,13 @@ https://user-images.githubusercontent.com/98888061/220252133-e7854fec-83df-46d1-
 **[Qiita記事:よくある質問の作り方](https://qiita.com/yamazaki2357/items/40daf5f188ca58b61e91)**
 
 ・実際にスクールで使っていただいている
+
+<div class="left">
+  <img width="300" src="image/tweet.png">
+</div>
+
+https://twitter.com/itschool_knzw/status/1648193665842708480?s=20
+
 <div class="left">
   <img width="300" src="https://github.com/yamazaki2357/FAQ/blob/main/image/clarity_1.png">
   <img width="300" src="https://github.com/yamazaki2357/FAQ/blob/main/image/clarity_2.png">
