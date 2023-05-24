@@ -39,7 +39,7 @@ https://twitter.com/itschool_knzw/status/1648193665842708480?s=20
 Slackのやりとり　　
 <img width="877" alt="スクリーンショット 2023-02-21 14 34 27" src="https://user-images.githubusercontent.com/98888061/220256699-5b53befe-3a32-4f78-b5df-0ffa3aa94ccc.png">
 
-## 技術
+## 技術スタック
 ・HTML  
 ・CSS  
 ・JavaScript  
